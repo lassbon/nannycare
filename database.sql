@@ -1,0 +1,1 @@
+SELECT kelvin FROM ZULFAH
