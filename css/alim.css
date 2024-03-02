@@ -16,8 +16,143 @@ table{
     font-size: 25px;
     border: 3px dashed pink;
     text-align: center;
+    overflow: hidden;
+    z-index: 100;
+
 }
 
 td, th{
     padding: 5px 20px;
+}
+
+td:hover, th:hover{
+    transform: scale(1.05);
+    background-color: burlywood;
+    border: 2px dotted red;
+    font-size: 30px;
+
+}
+
+.boun{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border-style: solid;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    transition: background-image 1s ease-in-out;
+    border-color: aqua rgb(223, 70, 23) rgb(225, 151, 55) rgb(16, 229, 91);
+    
+}
+
+.bounce {
+    animation: bounce 20s alternate infinite ease-in-out;
+
+}
+
+@keyframes bounce {
+
+    0% {
+        background-image: repeating-radial-gradient(circle, rgb(229, 65, 114), rgb(167, 119, 119) 5%, rgb(148, 116, 202) 25%, green 5%);
+        transform: translateY(0) rotate(0);
+    }
+    5% {
+        background-image: repeating-linear-gradient(180deg, rgb(236, 177, 195) 10%, rgb(59, 210, 117) 10%, rgb(117, 52, 191) 20%, orangered 5%);
+        transform: translateY(-500px) rotate(360deg);
+    }
+    10%{
+        background-image: repeating-linear-gradient(to right, rgb(231, 201, 125) 10%, rgb(235, 16, 16) 15%, rgb(157, 224, 85) 20%, red 5%);
+        transform: translate(50px, 0px) rotate(0deg);
+    }
+    15% {
+        background-image: repeating-linear-gradient(270deg, rgb(3, 170, 241)  10%, rgb(63, 20, 220) 10%, rgb(34, 240, 27) 19%, blueviolet 5%);
+        transform: translate(120px, -500px) rotate(360deg);
+    }
+    20% {
+        background-image: repeating-linear-gradient(to right bottom, rgb(229, 65, 114), rgb(167, 119, 119) 9%, rgb(164, 184, 31) 9%, pink 5%);
+        transform: translate(190px, 0px) rotate(0deg);
+    }
+    25% {
+        background-image: repeating-linear-gradient(120deg, rgb(194, 210, 105), rgb(17, 0, 81) 18%, rgb(252, 116, 116) 18%, bisque 55);
+        transform: translate(260px, -500px) rotate(360deg);
+    }
+    30% {
+        background-image: repeating-linear-gradient(to top, rgb(97, 28, 49), rgb(209, 163, 66) 17%, rgb(48, 161, 202) 17%, black 5%);
+        transform: translate( 330px, 0px) rotate(0deg);
+    }
+    35% {
+        background-image: repeating-linear-gradient(20deg, rgb(229, 122, 65), rgb(159, 50, 144) 41%, rgb(148, 116, 2) 4%, lightblue 5%);
+        transform: translate(400px, -500px) rotate(360deg);
+    }
+    40% {
+        background-image: repeating-linear-gradient(to right top, rgb(29, 65, 114), rgb(119, 167, 141) 8%, rgb(18, 116, 202) 8%, lightgreen 5%);
+        transform: translate(470px, -0px) rotate(0deg);
+    }
+    45% {
+        background-image: repeating-linear-gradient(70deg, rgb(99, 150, 181), rgb(167, 19, 119) 11%, rgb(148, 11, 202) 11%, brown 5%);
+        transform: translate(540px, -500px) rotate(360deg);
+    }
+    55% {
+        background-image: repeating-linear-gradient(to right bottom, rgb(191, 65, 229), rgb(236, 95, 95) 16%, rgb(198, 6, 202) 6%);
+        transform: translate(610px, 0) rotate(0);
+    }
+    60% {
+        background-image: repeating-linear-gradient(300deg, rgb(118, 79, 90), rgb(184, 88, 154) 14%, rgb(128, 169, 2) 14%, blue 5%);
+        transform: translate(680px, -500px) rotate(360deg);
+    }
+    65%{
+        background-image: repeating-linear-gradient(50deg, rgb(239, 127, 213), rgb(137, 17, 17) 11%, rgb(148, 116, 22) 9%, orange 5%);
+        transform: translate(750px, 0px) rotate(0deg);
+    }
+    70% {
+        background-image: repeating-linear-gradient(to right, rgb(104, 228, 218), rgb(241, 13, 13) 12%, rgb(148, 16, 202) 12%, grey 5%);
+        transform: translate(820px, -500px) rotate(360deg);
+    }
+    75% {
+        background-image: repeating-linear-gradient(240deg, rgb(229, 65, 114), rgb(108, 75, 170) 10%, rgb(18, 116, 202) 5%, red 5%);
+        transform: translate(890px, 0px) rotate(0deg);
+    }
+    80% {
+        background-image: repeating-linear-gradient(to left top, rgb(89, 191, 0), rgb(180, 164, 84) 17%, rgb(148, 16, 22) 7%, yellow 5%);
+        transform: translate(960px, -500px) rotate(360deg);
+    }
+    85% {
+        background-image: repeating-linear-gradient(100deg, rgb(229, 65, 114), rgb(149, 167, 119) 5%, rgb(1, 116, 202) 8%, white 5%);
+        transform: translate( 1030px, 0px) rotate(0deg);
+    }
+    90% {
+        background-image: repeating-linear-gradient(to right bottom, rgb(229, 65, 114), rgb(119, 149, 167) 8%, rgb(148, 116, 2) 8%, green 5%);
+        transform: translate(1100px, -500px) rotate(360deg);
+    }
+    95% {
+        background-image: repeating-linear-gradient(to right, rgb(65, 229, 117), rgb(0, 213, 255) 2%, rgb(80, 42, 15) 30%, violet 5%);
+        transform: translate(1170px, -0px) rotate(0deg);
+    }
+    100% {
+        background-image: repeating-linear-gradient(45deg, orange, red 20%, brown 2%, rgb(51, 19, 103) 5%);
+        transform: translate(1140px, -500px) rotate(360deg);
+    }
+}
+
+.bounce1 {
+    transition: background-image  1s ease-in-out;
+    animation: bounce1 3s infinite ease-in alternate;
+}
+
+@keyframes bounce1 {
+    0% {
+        background-image: repeating-conic-gradient(rgb(244, 214, 214) 0% 10%, black 10% 20%);
+    
+        transform: translateY(0px) rotate(0deg);
+    }
+     50% {
+        background-image: repeating-conic-gradient(white 0% 2%, black 2% 4%);
+
+        transform: translateY(-400px) rotate(360deg);
+    }
+    100% {
+        background-image: repeating-conic-gradient(rgb(210, 214, 205) 0% 5%, black 5% 10%);
+        transform: translateY(0px) rotate(0deg);
+    }
 }
