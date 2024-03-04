@@ -13,7 +13,7 @@ body{
 }
 
 table{
-    font-size: 25px;
+    font-size: 20px;
     border: 3px dashed pink;
     text-align: center;
     overflow: hidden;
@@ -21,15 +21,12 @@ table{
 
 }
 
-td, th{
-    padding: 5px 20px;
-}
 
 td:hover, th:hover{
     transform: scale(1.05);
     background-color: burlywood;
     border: 2px dotted red;
-    font-size: 30px;
+    font-size: 25px;
 
 }
 
@@ -127,11 +124,11 @@ td:hover, th:hover{
     }
     95% {
         background-image: repeating-linear-gradient(to right, rgb(65, 229, 117), rgb(0, 213, 255) 2%, rgb(80, 42, 15) 30%, violet 5%);
-        transform: translate(1170px, -0px) rotate(0deg);
+        transform: translate(1070px, -0px) rotate(0deg);
     }
     100% {
         background-image: repeating-linear-gradient(45deg, orange, red 20%, brown 2%, rgb(51, 19, 103) 5%);
-        transform: translate(1140px, -500px) rotate(360deg);
+        transform: translate(1100px, -500px) rotate(360deg);
     }
 }
 
